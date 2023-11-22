@@ -61,11 +61,11 @@ const CustomLayout: React.FC<CustomLayoutProps> = ({
       ) : (
         <Loader loaderTimeout={100} />
       )}
-      <header className={title} style={{ height: "10vh" }}>
+      <header className={title} style={{ height: "8vh" }}>
         <div className="container-fluid px-5">
           <div className="row">
             <div className="col">
-              <div className="menu" style={{ height: "10vh" }}>
+              <div className="menu" style={{ height: "8vh" }}>
                 <Logo logo={logo} />
                 <Sidebar />
                 {coupon ? (

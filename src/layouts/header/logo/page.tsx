@@ -15,7 +15,7 @@ const Logo: React.FC<ILogoProps> = ({ logo }) => {
               src="/assets/images/icon/lbky-logo.png"
               alt=""
               className="img-fluid "
-              width={90}
+              width={80}
               height={39}
             />
             {/* <h1
@@ -39,7 +39,7 @@ const Logo: React.FC<ILogoProps> = ({ logo }) => {
               src={"/assets/images/icon/lbky-logo.png"}
               alt="logo-clasic"
               className="img-fluid ed"
-              width={90}
+              width={80}
               height={39}
             />
           </Link>

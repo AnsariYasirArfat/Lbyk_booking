@@ -19,7 +19,7 @@ export default function LbykBookingAll() {
     <div className="booking-order">
       <div
         className="summery-box p-4 d-flex flex-column justify-content-between"
-        style={{ height: "80vh" }}
+        style={{ height: "84vh" }}
       >
         {step === 1 && <SelectQuantity onNext={handleNext} />}
 

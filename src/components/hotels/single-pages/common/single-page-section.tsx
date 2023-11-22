@@ -39,7 +39,7 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ side }) => {
       style={{
         padding: " 0px",
         margin: "0px",
-        height: "83vh",
+        height: "85vh",
         overflow: "hidden",
         backgroundColor: "#ae926a1a",
       }}
@@ -58,15 +58,10 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ side }) => {
             {/* <div className="sticky-cl"> */}
             <div className="">
               <LbykBookingAll />
-              {/* <ContactInfo /> */}
-              {/* <WeatherInfo /> */}
             </div>
           </div>
 
-          <div
-            className="col-lg-7 px-0"
-            style={{ height: "83vh", overflow: "scroll" }}
-          >
+          <div className="col-lg-7 px-0">
             <ImageSection
               imagesection1={imagesection1}
               imagesection2={imagesection2}

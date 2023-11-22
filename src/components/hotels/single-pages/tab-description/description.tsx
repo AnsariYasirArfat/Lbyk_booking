@@ -38,14 +38,17 @@ const TabDescription: FC<ITabDescriptionProps> = ({ tabsData, class1 }) => {
         >
           <TabPane tabId="1">
             <div className="desc-box">
-              <div className="menu-part page-section">
+              <div
+                className="menu-part page-section"
+                style={{ height: "30vh", overflow: "scroll" }}
+              >
                 <div className={`booking-tab-fade-in`}>
-                  <h4
+                  {/* <h4
                     className="content-title text-center"
                     style={{ color: "#ae926a" }}
                   >
                     Overview
-                  </h4>
+                  </h4> */}
                   <p style={{ color: "black", fontSize: "12px" }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Error unde repellat cum autem deserunt est similique amet

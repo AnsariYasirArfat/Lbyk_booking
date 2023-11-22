@@ -6,14 +6,17 @@ import { FC } from "react";
 const Facilities: FC<IRoomProps> = ({ tab }) => {
   return (
     <div className="desc-box" id="facility">
-      <div className="menu-part page-section facility">
+      <div
+        className="menu-part page-section facility"
+        style={{ height: "30vh", overflow: "scroll" }}
+      >
         <div className={`booking-tab-fade-in`}>
-          <h4
+          {/* <h4
             className="content-title text-center"
             style={{ color: "#ae926a" }}
           >
-            facility at sea view
-          </h4>
+            Facility 
+          </h4> */}
           {tab && <h4 className="content-title">{FacilityAtSeaView}</h4>}
           <div className="row">
             {facilityData.map((data: IFacilityDataProps, index) => (

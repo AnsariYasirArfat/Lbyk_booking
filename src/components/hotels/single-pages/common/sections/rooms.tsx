@@ -10,14 +10,17 @@ const Rooms: FC<IRoomProps> = ({ tab }) => {
   return (
     <NoSsr>
       <div className="desc-box" id="rooms">
-        <div className="menu-part page-section">
+        <div
+          className="menu-part page-section"
+          style={{ height: "30vh", overflow: "scroll" }}
+        >
           <div className={`booking-tab-fade-in`}>
-            <h4
+            {/* <h4
               className="content-title text-center"
               style={{ color: "#ae926a" }}
             >
               choose room
-            </h4>
+            </h4> */}
             {tab && <h4 className="content-title">{ChooseRoom}</h4>}
             <table className="rooms-box">
               <tbody>
