@@ -65,7 +65,7 @@ const CustomLayout: React.FC<CustomLayoutProps> = ({
         <div className="container-fluid px-5">
           <div className="row">
             <div className="col">
-              <div className="menu">
+              <div className="menu" style={{ height: "10vh" }}>
                 <Logo logo={logo} />
                 <Sidebar />
                 {coupon ? (

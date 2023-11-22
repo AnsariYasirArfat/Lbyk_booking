@@ -23,7 +23,7 @@ const PreLoader: React.FC<ILoaderProps> = ({ loaderTimeout, side }) => {
   return (
     <div className={`skeleton_loader ${show ? "" : "loaderhide"}`}>
       <SkeletonHeader />
-      <div className="breadcrumb-section dark-bg"></div>
+      <div className="breadcrumb-section "></div>
       <SkeletonSearch />
       <section className="xs-section bg-inner">
         <div className="container">
@@ -37,10 +37,16 @@ const PreLoader: React.FC<ILoaderProps> = ({ loaderTimeout, side }) => {
                 <SkeletonSidebar />
               </div>
             )}
-            <div className={`${side === "no" ? "col-lg-12" : "col-lg-9"} ratio3_2`}>
+            <div
+              className={`${side === "no" ? "col-lg-12" : "col-lg-9"} ratio3_2`}
+            >
               <a href="#" className="mobile-filter border-top-0">
                 <h5></h5>
-                <img src="/assets/images/icon/adjust.png" className="img-fluid" alt="" />
+                <img
+                  src="/assets/images/icon/adjust.png"
+                  className="img-fluid"
+                  alt=""
+                />
               </a>
               <SkeletonProducts />
             </div>

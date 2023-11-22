@@ -145,11 +145,11 @@ body {
             }
           }
         }
-        .brand-logo {
-          img {
-            filter: invert(0);
-          }
-        }
+        // .brand-logo {
+        //   img {
+        //     filter: invert(0);
+        //   }
+        // }
       }
       .toggle-nav {
         i {
@@ -210,61 +210,63 @@ body {
       &.nav-pills {
         .nav-link.active,
         .show > .nav-link {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color1), 1);
           svg {
-            fill: rgba(var(--theme-color1),1);
+            fill: rgba(var(--theme-color1), 1);
           }
         }
       }
     }
   }
-  .mix-layout{
-    .form-control{
-      &::placeholder{
+  .mix-layout {
+    .form-control {
+      &::placeholder {
         color: rgba($white-1, 0.6);
       }
     }
   }
-  .header-tabs{
-    .mix-pills{
-      &.nav-pills{
-        .nav-link{
+  .header-tabs {
+    .mix-pills {
+      &.nav-pills {
+        .nav-link {
           color: $white-6;
-          &.active{
-            color: rgba(var(--theme-color1),1);
-            svg{
-              fill: rgba(var(--theme-color1),1);
+          &.active {
+            color: rgba(var(--theme-color1), 1);
+            svg {
+              fill: rgba(var(--theme-color1), 1);
             }
           }
-          svg{
+          svg {
             fill: $white-6;
           }
         }
       }
     }
   }
-  .elements-date-time{
-    .datepicker-main{
+  .elements-date-time {
+    .datepicker-main {
       background-color: $dark-body;
       color: $white-6;
     }
-    .rooms-section, .suggestion_box{
-      input{
-        &::placeholder{
+    .rooms-section,
+    .suggestion_box {
+      input {
+        &::placeholder {
           color: $white-6;
         }
       }
-      .input-group{
-        .btn{
+      .input-group {
+        .btn {
           background-color: $dark-body;
           border-color: $dark-border;
-          i{
+          i {
             color: $white-6;
           }
         }
       }
-      .bottom-part{
-        .add-room, .btn{
+      .bottom-part {
+        .add-room,
+        .btn {
           color: $white-6;
         }
       }
@@ -297,10 +299,10 @@ body {
       }
     }
   }
-  .cab-full{
-    .flight-search{
-      .flight-search-detail{
-        .datepicker-main{
+  .cab-full {
+    .flight-search {
+      .flight-search-detail {
+        .datepicker-main {
           background-color: $dark-body;
           color: rgba($white-1, 0.8);
         }
@@ -313,7 +315,7 @@ body {
   footer {
     &.footer-light {
       .footer {
-        background-color:  #AE926A;
+        background-color: #ae926a;
         .footer-content {
           .contact-detail {
             p {
@@ -359,7 +361,7 @@ body {
         }
       }
       .sub-footer {
-        background-color: #AE926A;
+        background-color: #ae926a;
       }
     }
   }
@@ -385,18 +387,18 @@ body {
       }
     }
   }
-  .left-sidebar{
-    .middle-part{
-      .filter-block{
-        .sidebar-hotels{
-          .hotel-box{
-            .content-right{
-              h5{
+  .left-sidebar {
+    .middle-part {
+      .filter-block {
+        .sidebar-hotels {
+          .hotel-box {
+            .content-right {
+              h5 {
                 color: $white-6;
               }
-              .price{
+              .price {
                 color: $dark-span;
-                span{
+                span {
                   color: $dark-span;
                 }
               }
@@ -409,9 +411,9 @@ body {
   .car-type-section {
     .type-box {
       box-shadow: 1px 2px 39px 9px rgba($dark-main, 0.6);
-      ul{
-        li{
-          img{
+      ul {
+        li {
+          img {
             filter: invert(1);
           }
         }
@@ -430,15 +432,15 @@ body {
       }
     }
   }
-  .order-food-section{
-    .order-food{
-      .book-table.single-table{
-        .table-form{
-          form{
-            .form-group{
-              input{
+  .order-food-section {
+    .order-food {
+      .book-table.single-table {
+        .table-form {
+          form {
+            .form-group {
+              input {
                 background-color: $dark-main;
-                &::placeholder{
+                &::placeholder {
                   color: $white-6;
                 }
               }
@@ -708,36 +710,36 @@ body {
       }
     }
   }
-  .search-section{
-    .datepicker-main{
+  .search-section {
+    .datepicker-main {
       background-color: $dark-body;
       color: $dark-link;
     }
   }
-  .book-table{
-    .table-form{
-      form{
-        .form-group{
-          &.custom-tour-input{
-            input{
+  .book-table {
+    .table-form {
+      form {
+        .form-group {
+          &.custom-tour-input {
+            input {
               background-color: $dark-main;
               color: $dark-link;
             }
           }
-          img{
+          img {
             filter: brightness(0) invert(1);
           }
         }
       }
     }
   }
-  .full-slider-accordion{
-    .menu-part{
-      .dark-accordion{
-        &.accordion{
-          .accordion-item{
+  .full-slider-accordion {
+    .menu-part {
+      .dark-accordion {
+        &.accordion {
+          .accordion-item {
             background-color: transparent;
-            .accordion-header{
+            .accordion-header {
               color: $white-6;
             }
           }
@@ -747,26 +749,33 @@ body {
   }
 
   // datepicker
-  .react-datepicker, .react-datepicker__header{
+  .react-datepicker,
+  .react-datepicker__header {
     background-color: $dark-main;
     border-color: $dark-border;
   }
-  .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__time-name {
     color: $white-4;
   }
-  .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before, 
-  .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after{
+  .react-datepicker-popper[data-placement^="bottom"]
+    .react-datepicker__triangle::before,
+  .react-datepicker-popper[data-placement^="bottom"]
+    .react-datepicker__triangle::after {
     border-bottom-color: $dark-main;
   }
-  .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::before, 
-  .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after{
+  .react-datepicker-popper[data-placement^="top"]
+    .react-datepicker__triangle::before,
+  .react-datepicker-popper[data-placement^="top"]
+    .react-datepicker__triangle::after {
     border-top-color: $dark-main;
   }
-  .react-datepicker__day, 
-  .react-datepicker__month-text, 
-  .react-datepicker__quarter-text, 
-  .react-datepicker__year-text{
-    &:hover{
+  .react-datepicker__day,
+  .react-datepicker__month-text,
+  .react-datepicker__quarter-text,
+  .react-datepicker__year-text {
+    &:hover {
       background-color: $dark-body;
     }
   }
@@ -781,7 +790,7 @@ body {
         }
         &.active {
           .page-link {
-            background-color: rgba(var(--theme-color1),1);
+            background-color: rgba(var(--theme-color1), 1);
             color: $white-1;
           }
         }
@@ -837,7 +846,7 @@ body {
       .form-control {
         background-color: $dark-main;
         color: $white-6;
-        &::placeholder{
+        &::placeholder {
           color: rgba($white-1, 0.7);
         }
       }
@@ -848,25 +857,25 @@ body {
       filter: invert(0.83);
     }
   }
-  .flight-detail-sec{
-    &.cab-detail-sec{
-      .detail-bar{
-        .detail-wrap{
-          .logo-sec label{
+  .flight-detail-sec {
+    &.cab-detail-sec {
+      .detail-bar {
+        .detail-wrap {
+          .logo-sec label {
             color: rgba($white-1, 0.7);
           }
         }
       }
     }
   }
-  .special-section{
-    &.grid-box{
-      .special-box{
-        &.cab-box{
-          .special-content{
-            ul{
-              li{
-                &::after{
+  .special-section {
+    &.grid-box {
+      .special-box {
+        &.cab-box {
+          .special-content {
+            ul {
+              li {
+                &::after {
                   background-color: rgba($white-1, 0.7);
                 }
               }
@@ -952,7 +961,7 @@ body {
           li {
             background-color: $dark-body;
             &.active {
-              background-color: rgba(var(--theme-color1),1);
+              background-color: rgba(var(--theme-color1), 1);
             }
           }
         }
@@ -1063,10 +1072,10 @@ body {
         }
       }
     }
-    .middle-part.collection-collapse-block{
+    .middle-part.collection-collapse-block {
       border-color: $dark-border;
-      .d-flex{
-        img{
+      .d-flex {
+        img {
           filter: invert(0.7);
         }
       }
@@ -1314,36 +1323,36 @@ body {
       }
     }
   }
-  .restaurant-home-section{
-    .food_content{
-      .single-table{
-        input{
+  .restaurant-home-section {
+    .food_content {
+      .single-table {
+        input {
           background-color: $dark-main !important;
         }
       }
     }
   }
-  .selector-box{
-    ul{
-      li{
-        span{
+  .selector-box {
+    ul {
+      li {
+        span {
           color: $white-6;
         }
       }
     }
   }
-  .selector-box-flight{
-    .room-cls{
-      .qty-box{
-        .input-group{
-          .qty-input{
+  .selector-box-flight {
+    .room-cls {
+      .qty-box {
+        .input-group {
+          .qty-input {
             background-color: transparent;
           }
         }
       }
     }
-    .bottom-part{
-      .btn{
+    .bottom-part {
+      .btn {
         color: $white-6;
       }
     }
@@ -1440,48 +1449,50 @@ body {
     .cab-content {
       form {
         .form-control {
-          &::placeholder{
+          &::placeholder {
             color: $white-6;
           }
         }
-        img{
+        img {
           background-color: $dark-body;
           border-color: $dark-border;
         }
       }
     }
   }
-  .tour-trending-form{
-    .custom-tour-input{
-      .form-control{
+  .tour-trending-form {
+    .custom-tour-input {
+      .form-control {
         background-color: $dark-main !important;
       }
     }
   }
-  .fc{
+  .fc {
     .fc-col-header-cell-cushion,
-    .fc-daygrid-day-number{
+    .fc-daygrid-day-number {
       color: $white-6;
     }
-    .fc-scrollgrid, th, td{
+    .fc-scrollgrid,
+    th,
+    td {
       border-color: $dark-border;
     }
   }
-  .top-filter-section{
-    .form-check{
-      .form-check-label{
-        img{
+  .top-filter-section {
+    .form-check {
+      .form-check-label {
+        img {
           filter: invert(1);
         }
       }
     }
   }
-  .review-section{
-    .review_box{
-      .flight_detail{
-        .summery_box{
-          .table{
-            td{
+  .review-section {
+    .review_box {
+      .flight_detail {
+        .summery_box {
+          .table {
+            td {
               background-color: $dark-body;
               color: $white-6;
             }
@@ -1490,43 +1501,44 @@ body {
       }
     }
   }
-  .flight-datepicker, .cab-form-input{
-    .form-control{
-      .datepicker-main{
+  .flight-datepicker,
+  .cab-form-input {
+    .form-control {
+      .datepicker-main {
         background-color: $dark-body;
         color: $white-6;
       }
     }
   }
-  .table-book{
-    .form-control{
-      &::placeholder{
+  .table-book {
+    .form-control {
+      &::placeholder {
         color: rgba($white-6, 0.7);
       }
     }
   }
-  .modal{
-    .modal-dialog{
-      .modal-header{
-        .btn-close{
+  .modal {
+    .modal-dialog {
+      .modal-header {
+        .btn-close {
           filter: invert(1);
         }
       }
     }
   }
-  .dashboard-section{
-    .dashboard-sidebar{
-      .profile-top{
+  .dashboard-section {
+    .dashboard-sidebar {
+      .profile-top {
         background-color: $dark-main;
       }
     }
-    .dashboard-box{
-      .dashboard-detail{
-        ul{
-          li{
-            .details{
-              .right{
-                h6{
+    .dashboard-box {
+      .dashboard-detail {
+        ul {
+          li {
+            .details {
+              .right {
+                h6 {
                   color: rgba($white-6, 0.7);
                 }
               }
@@ -1669,7 +1681,7 @@ body {
           }
           &.active {
             a {
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color1), 1);
             }
           }
         }
@@ -1826,44 +1838,44 @@ body {
       }
     }
   }
-  .default-accordion{
-    .accordion{
+  .default-accordion {
+    .accordion {
       --bs-accordion-bg: #232323;
-      .accordion-item{
+      .accordion-item {
         border-color: $dark-border;
-        .accordion-button{
+        .accordion-button {
           background-color: $dark-body;
-          &::after{
+          &::after {
             filter: brightness(0) invert(1);
           }
         }
-        .accordion-body{
-          label{
+        .accordion-body {
+          label {
             color: $white-6;
           }
         }
       }
     }
   }
-  .single-page-classic{
-    .form-control{
-      .datepicker-main{
+  .single-page-classic {
+    .form-control {
+      .datepicker-main {
         background-color: $dark-body;
         color: $white-6;
       }
     }
   }
-  .guest-detail{
-    form{
-      .input-group-text{
+  .guest-detail {
+    form {
+      .input-group-text {
         color: $white-6;
       }
     }
   }
-  .product-filter-tags{
-    li{
-      .filter-tag{
-        .btn-close{
+  .product-filter-tags {
+    li {
+      .filter-tag {
+        .btn-close {
           filter: invert(1);
         }
       }
@@ -1907,15 +1919,16 @@ body {
       }
     }
   }
-  .blog-single-detail{
-    .comment-section{
-      .comment-wrapper{
-        .comment-box{
-          .media{
-            .media-body{
-              .title{
-                .comment-user, .comment-date{
-                  i{
+  .blog-single-detail {
+    .comment-section {
+      .comment-wrapper {
+        .comment-box {
+          .media {
+            .media-body {
+              .title {
+                .comment-user,
+                .comment-date {
+                  i {
                     color: rgba($white-1, 0.7);
                   }
                 }
@@ -1938,7 +1951,7 @@ body {
     form {
       .form-control {
         color: rgba($white-1, 0.8);
-        &::placeholder{
+        &::placeholder {
           color: rgba($white-1, 0.7);
         }
       }
@@ -2106,36 +2119,36 @@ body {
       }
     }
   }
-  .rmdp-container{
-    .rmdp-wrapper{
+  .rmdp-container {
+    .rmdp-wrapper {
       background-color: $dark-main;
       box-shadow: none;
-      .rmdp-day{
-        span{
+      .rmdp-day {
+        span {
           color: $white-6;
         }
       }
-      .rmdp-header-values{
+      .rmdp-header-values {
         color: $white-6;
       }
-    } 
-    .rmdp-border-top{
+    }
+    .rmdp-border-top {
       border-top: 1px solid $dark-border;
     }
-    .rmdp-ep-arrow{
-      &::after{
+    .rmdp-ep-arrow {
+      &::after {
         background-color: $dark-main;
         box-shadow: none;
       }
     }
-    .rmdp-ep-arrow[direction=bottom]{
+    .rmdp-ep-arrow[direction="bottom"] {
       border-top: 1px solid $dark-border;
     }
-    .rmdp-ep-arrow[direction=top]{
+    .rmdp-ep-arrow[direction="top"] {
       border-bottom: 1px solid $dark-border;
     }
-    .rmdp-time-picker{
-      input{
+    .rmdp-time-picker {
+      input {
         background-color: $dark-body;
         color: $white-6;
       }
@@ -2153,9 +2166,9 @@ body {
       }
     }
   }
-  .vector-tour-input{
-    .form-control{
-      input{
+  .vector-tour-input {
+    .form-control {
+      input {
         background-color: $dark-body;
       }
     }
@@ -2168,7 +2181,7 @@ body {
         .nav-link {
           color: $dark-link;
           &.active {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color1), 1);
           }
         }
       }
@@ -2614,7 +2627,7 @@ body {
         li {
           background-color: $dark-main;
           &.active {
-            background-color: rgba(var(--theme-color1),1);
+            background-color: rgba(var(--theme-color1), 1);
           }
         }
       }
@@ -2674,7 +2687,7 @@ body {
           }
           &.active {
             .address-box {
-              border-color: rgba(var(--theme-color1),1);
+              border-color: rgba(var(--theme-color1), 1);
             }
           }
         }
@@ -2687,10 +2700,10 @@ body {
       }
     }
   }
-  .flight-form-input{
-    .form-control{
-      .react-datepicker__input-container{
-        input{
+  .flight-form-input {
+    .form-control {
+      .react-datepicker__input-container {
+        input {
           background-color: $dark-body;
           color: $white-6;
         }
@@ -2762,12 +2775,12 @@ body {
       }
     }
   }
-  .blog-inner{
-    &.blog_section{
-      .blog-wrap{
-        .blog-details{
-          h6{
-            i{
+  .blog-inner {
+    &.blog_section {
+      .blog-wrap {
+        .blog-details {
+          h6 {
+            i {
               color: $white-6;
             }
           }
@@ -3073,7 +3086,18 @@ body {
           .payment-card {
             &.add-card {
               background-color: $dark-body;
-              background-image: repeating-linear-gradient(45deg, rgba(black, 0) 1px, rgba(black, 0.03) 2px, rgba(black, 0.04) 3px, rgba(black, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(black, 0) 40%, rgba(black, 0.2) 70%, rgba(black, 0) 90%);
+              background-image: repeating-linear-gradient(
+                  45deg,
+                  rgba(black, 0) 1px,
+                  rgba(black, 0.03) 2px,
+                  rgba(black, 0.04) 3px,
+                  rgba(black, 0.05) 4px
+                ),
+                -webkit-linear-gradient(-245deg, rgba(black, 0) 40%, rgba(
+                        black,
+                        0.2
+                      )
+                      70%, rgba(black, 0) 90%);
             }
           }
         }
@@ -3204,12 +3228,12 @@ body {
 
 @media (max-width: 767px) {
   .dark {
-    .video-modal{
-      .modal-body{
-        .btn-close{
+    .video-modal {
+      .modal-body {
+        .btn-close {
           right: 8px;
           top: -4px;
-          span{
+          span {
             color: $white-1;
           }
         }

@@ -3,11 +3,12 @@ import { Nav, NavLink, NavItem } from "reactstrap";
 
 const Tabs: FC<ITabProps> = ({ data, callbackActive }) => {
   const [activeTab, setActiveTab] = useState("1");
+
   return (
     <Fragment>
       <Nav
         tabs
-        className="nav nav-tabs d-flex justify-content-around"
+        className="nav nav-tabs d-flex justify-content-around py-1 "
         style={{ marginBottom: "" }}
       >
         {data?.map((item: ITabsDataProps, i: number) => (
@@ -19,7 +20,9 @@ const Tabs: FC<ITabProps> = ({ data, callbackActive }) => {
               callbackActive(item.id);
             }}
           >
-            <NavLink style={{ padding: "6px", fontSize: "12px" }}>
+            <NavLink
+              style={{ padding: "6px", fontSize: "11px", fontWeight: 900 }}
+            >
               {item.title}
             </NavLink>
           </NavItem>

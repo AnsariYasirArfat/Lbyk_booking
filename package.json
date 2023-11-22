@@ -51,6 +51,7 @@
     "react-datetime-picker": "^5.2.0",
     "react-dom": "18.2.0",
     "react-double-range-slider": "^3.0.1",
+    "react-flags-select": "^2.2.3",
     "react-i18next": "^13.0.1",
     "react-leaflet": "^4.2.1",
     "react-loading-skeleton": "^3.3.1",

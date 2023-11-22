@@ -18,21 +18,34 @@ const LeftSidebar: FC = () => {
 
   return (
     <CustomLayout title="inner-page" userBgClass="user user-light" loader="pre">
-      <Breadcrumb title="Home" subTitle="hotels in dubai" bannerImg={"/assets/images/inner-pages/bg-bread.jpg"} />
+      <Breadcrumb
+        title="Home"
+        subTitle="hotels in dubai"
+        bannerImg={"/assets/images/inner-pages/bg-bread.jpg"}
+      />
       <div className="search-panel" id="searchBar">
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-10 offset-xl-1">
-            <div className="search-panel" id="searchBar">
-              <div className="search-section">
-                <SearchBox />
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-10 offset-xl-1">
+              <div className="search-panel" id="searchBar">
+                <div className="search-section">
+                  <SearchBox />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-      <GridView size={3} gridType={"grid-view"} side={"left"} value={data} topFilter={false} gridOption={true} grid4Img={false} type={"hotel"} />
+      <GridView
+        size={3}
+        gridType={"grid-view"}
+        side={"left"}
+        value={data}
+        topFilter={false}
+        gridOption={true}
+        grid4Img={false}
+        type={"hotel"}
+      />
     </CustomLayout>
   );
 };

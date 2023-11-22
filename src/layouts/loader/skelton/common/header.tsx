@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux-toolkit/store";
 import { useTranslation } from "@/app/i18n/client";
-
+import Image from "next/image";
 interface SelectOption {
   value: string;
   label: string;
@@ -17,7 +17,7 @@ const SkeletonHeader: FC = () => {
   const renderMenuItems = () => {
     return menuItems.map((item, index) => (
       <li key={index} className="dropdown">
-        <a href={item.link} className="nav-link menu-title">
+        <a href={item.link} className="nav-link menu-title text-dark">
           {t(item.title)}
         </a>
       </li>
@@ -48,12 +48,19 @@ const SkeletonHeader: FC = () => {
               <div className="brand-logo">
                 <Link href="/">
                   {/* <img src="/assets/images/icon/footer-logo.png" alt="" className="img-fluid" /> */}
-                  <h1
+                  <Image
+                    src="/assets/images/icon/lbky-logo.png"
+                    alt=""
+                    className="img-fluid "
+                    width={90}
+                    height={39}
+                  />
+                  {/* <h1
                     className=" fs-4 text-light text-capitalize p-0 m-0"
                     style={{ fontWeight: "900" }}
                   >
                     Lbyk Booking
-                  </h1>
+                  </h1> */}
                 </Link>
               </div>
               <nav>
@@ -68,13 +75,13 @@ const SkeletonHeader: FC = () => {
                 </div>
               </nav>
               <ul className="header-right">
-                <li className="front-setting">
-                  <select>
+                <li className="front-setting ">
+                  <select className="text-dark">
                     {renderSelectOptions(settingsOptions, "currency")}
                   </select>
                 </li>
-                <li className="front-setting">
-                  <select>
+                <li className="front-setting ">
+                  <select className="text-dark">
                     {renderSelectOptions(languageOptions, "lang")}
                   </select>
                 </li>
@@ -89,12 +96,12 @@ const SkeletonHeader: FC = () => {
                   </a>
                   <ul className="setting-open">
                     <li className="front-setting">
-                      <select>
+                      <select className="text-dark">
                         {renderSelectOptions(settingsOptions, "currency")}
                       </select>
                     </li>
                     <li className="front-setting">
-                      <select>
+                      <select className="text-dark">
                         {renderSelectOptions(languageOptions, "lang")}
                       </select>
                     </li>
