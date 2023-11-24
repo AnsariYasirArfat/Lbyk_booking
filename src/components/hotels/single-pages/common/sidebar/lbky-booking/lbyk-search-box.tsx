@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import { CheckIn, CheckOut } from "@/constant/constant";
 import { FC, useState, useEffect, useCallback, useRef } from "react";
@@ -11,7 +12,10 @@ const LbykSearchBox: FC<ISearchBoxProps> = ({ classRound }) => {
   const [startDate1, setStartDate1] = useState(new Date());
 
   const [nights, setNights] = useState(1);
-  const [guest, setGuest] = useState({ adults: 1, child: 0 });
+  const [guest, setGuest] = useState<{ adults: number; child: number }>({
+    adults: 1,
+    child: 0,
+  });
 
   const [show, setShow] = useState(false);
   const searchBoxRef: any = useRef(null);

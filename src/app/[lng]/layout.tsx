@@ -3,8 +3,7 @@ import "@/public/assets/scss/globals.scss";
 import { languages } from "../i18n/settings";
 import "./layout.css";
 export const metadata = {
-  title: "Rica",
-  description: "themes.pixelstrap.com",
+  title: "Lbyk Booking",
 };
 
 export async function generateStaticParams() {
