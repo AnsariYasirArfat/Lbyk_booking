@@ -13,12 +13,12 @@ const ImageSection: FC<IImageSection> = ({
     <div className="image_section  ">
       <div className="row  " style={{ overflow: "hidden" }}>
         <div className="col-sm-8  position-relative">
-          <div className="lbyk-hotel-name-label  d-flex  justify-content-evenly align-items-center gap-2">
+          {/* <div className="lbyk-hotel-name-label  d-flex  justify-content-evenly align-items-center gap-2">
             <h2 className="fs-6 mb-0 text-light" style={{ fontWeight: "800" }}>
               {"Millennium Dubai Al Naseem"}
             </h2>
             <Rating />
-          </div>
+          </div> */}
           <SliderImage
             imageSectionData={imagesection1}
             classSlide="arrow-dark zoom-gallery ratio2_3"

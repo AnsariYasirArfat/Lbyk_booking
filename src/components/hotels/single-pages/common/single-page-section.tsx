@@ -50,7 +50,13 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ side }) => {
             <HotelBannerDetail />
           </div>
         </div> */}
-        <div className="row  mt-2">
+        <div className="row position-relative mt-2">
+          <div className="lbyk-hotel-name-label  d-flex  justify-content-evenly align-items-center gap-2">
+            <h2 className="fs-6 mb-0 text-light" style={{ fontWeight: "800" }}>
+              {"Millennium Dubai Al Naseem"}
+            </h2>
+            <Rating />
+          </div>
           <div
             className={`col-lg-5 ${side === "right" ? "order-1" : ""}`}
             id="booking"
