@@ -27,6 +27,7 @@
     "accept-language": "^3.0.18",
     "apexcharts": "^3.41.1",
     "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.2.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.0",
@@ -34,7 +35,9 @@
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-resources-for-ts": "^1.2.1",
     "i18next-resources-to-backend": "^1.1.4",
+    "jsonwebtoken": "^9.0.2",
     "leaflet": "^1.9.4",
+    "mongoose": "^8.0.3",
     "next": "^13.2.4",
     "next-i18next": "^14.0.0",
     "next-redux-wrapper": "^8.1.0",
@@ -73,6 +76,8 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/react-slick": "^0.23.10"
   }
 }
