@@ -49,7 +49,7 @@ const TabDescription: FC<ITabDescriptionProps> = ({ tabsData, class1 }) => {
                   >
                     Overview
                   </h4> */}
-                  <p style={{ color: "black", fontSize: "12px" }}>
+                  <p className="tw-text-sm tw-font-bold" style={{ color: "black", fontSize: "12px" }}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Error unde repellat cum autem deserunt est similique amet
                     ipsam. Earum ab nulla ipsum neque fugit illo, veritatis
